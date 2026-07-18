@@ -58,6 +58,16 @@
   margin-bottom: 2.5rem;
 }
 
+.papers h3 {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1rem;
+  color: $grey-color-dark;
+}
+
+.papers h3:first-child {
+  margin-top: 0;
+}
+
 .paper-list {
   list-style: none;
   margin: 0;
