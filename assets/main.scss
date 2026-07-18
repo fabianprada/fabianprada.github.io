@@ -91,3 +91,15 @@
   font-size: 0.9rem;
   color: $grey-color;
 }
+
+.paper-type {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: $grey-color-light;
+  color: $grey-color-dark;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}

@@ -22,37 +22,28 @@ title: Fabian Prada
   </section>
 
   <section class="papers">
-    <h3>@Meta</h3>
-    <ul class="paper-list">
-      <li class="paper">
-        <a href="#" class="paper-title"><!-- TODO: paper title --></a>
-        <p class="paper-meta"><!-- TODO: authors / venue / year --></p>
-      </li>
-    </ul>
-
-    <h3>@Hopkins</h3>
-    <ul class="paper-list">
-      <li class="paper">
-        <a href="#" class="paper-title"><!-- TODO: paper title --></a>
-        <p class="paper-meta"><!-- TODO: authors / venue / year --></p>
-      </li>
-    </ul>
-
-    <h3>@IMPA</h3>
-    <ul class="paper-list">
-      <li class="paper">
-        <a href="#" class="paper-title"><!-- TODO: paper title --></a>
-        <p class="paper-meta"><!-- TODO: authors / venue / year --></p>
-      </li>
-    </ul>
-
-    <h3>@Andes</h3>
-    <ul class="paper-list">
-      <li class="paper">
-        <a href="#" class="paper-title"><!-- TODO: paper title --></a>
-        <p class="paper-meta"><!-- TODO: authors / venue / year --></p>
-      </li>
-    </ul>
+    {% assign affiliations = "Meta|Johns Hopkins University|IMPA|Universidad de los Andes" | split: "|" %}
+    {% assign labels = "@Meta|@Hopkins|@IMPA|@UniAndes" | split: "|" %}
+    {% for affiliation in affiliations %}
+      {% assign pubs = site.data.publications | where: "affiliation", affiliation | sort: "year" | reverse %}
+      <h3>{{ labels[forloop.index0] }}</h3>
+      <ul class="paper-list">
+        {% for p in pubs %}
+        <li class="paper">
+          {% if p.link %}
+          <a href="{{ p.link }}" class="paper-title" target="_blank" rel="noopener">{{ p.title }}</a>
+          {% else %}
+          <span class="paper-title">{{ p.title }}</span>
+          {% endif %}
+          <p class="paper-meta">
+            {% for a in p.authors %}{% if a contains "Prada" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            &mdash; {{ p.venue }}, {{ p.year }}
+          </p>
+          <span class="paper-type">{{ p.type }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
   </section>
 
   <footer>
