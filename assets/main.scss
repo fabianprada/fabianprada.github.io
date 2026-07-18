@@ -103,3 +103,15 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+
+.paper-extra {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+  color: $brand-color;
+}
+
+.paper-extra:hover {
+  text-decoration: underline;
+}

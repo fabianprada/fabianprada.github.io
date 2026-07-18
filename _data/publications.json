@@ -229,15 +229,15 @@
   },
   {
     "type": "article",
-    "project page": null,
-    "code": null,
+    "project page": "https://yufu-wang.github.io/duomo/",
+    "code": "https://github.com/facebookresearch/DuoMo",
     "file": "2026-CVPR.pdf",
     "title": "DuoMo: Dual Motion Diffusion for World-Space Human Reconstruction",
     "authors": ["Yufu Wang", "Evonne Ng", "Soyong Shin", "Rawal Khirodkar", "Yuan Dong", "Zhaoen Su", "Jinhyung Park", "Kris Kitani", "Alexander Richard", "Fabian Prada", "Michael Zollhöfer"],
     "year": 2026,
     "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
     "affiliation": "Meta",
-    "link": "https://yufu-wang.github.io/duomo/"
+    "link": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_DuoMo_Dual_Motion_Diffusion_for_World-Space_Human_Reconstruction_CVPR_2026_paper.html"
   },
   {
     "type": "technical report",

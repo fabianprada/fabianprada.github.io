@@ -40,6 +40,8 @@ title: Fabian Prada
             &mdash; {{ p.venue }}, {{ p.year }}
           </p>
           <span class="paper-type">{{ p.type }}</span>
+          {% if p["project page"] %}<a href="{{ p["project page"] }}" class="paper-extra" target="_blank" rel="noopener">project page</a>{% endif %}
+          {% if p.code %}<a href="{{ p.code }}" class="paper-extra" target="_blank" rel="noopener">code</a>{% endif %}
         </li>
         {% endfor %}
       </ul>
