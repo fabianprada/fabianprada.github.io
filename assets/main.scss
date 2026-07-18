@@ -86,10 +86,16 @@
   font-weight: 600;
 }
 
-.paper-meta {
+.paper-authors {
   margin: 0.25rem 0 0;
   font-size: 0.9rem;
   color: $grey-color;
+}
+
+.paper-venue {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: $text-color;
 }
 
 .paper-type {

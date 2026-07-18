@@ -35,10 +35,10 @@ title: Fabian Prada
           {% else %}
           <span class="paper-title">{{ p.title }}</span>
           {% endif %}
-          <p class="paper-meta">
+          <p class="paper-authors">
             {% for a in p.authors %}{% if a contains "Prada" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
-            &mdash; {{ p.venue }}, {{ p.year }}
           </p>
+          <p class="paper-venue"><strong>{{ p.venue }}, {{ p.year }}</strong></p>
           <span class="paper-type">{{ p.type }}</span>
           {% if p["project page"] %}<a href="{{ p["project page"] }}" class="paper-extra" target="_blank" rel="noopener">project page</a>{% endif %}
           {% if p.code %}<a href="{{ p.code }}" class="paper-extra" target="_blank" rel="noopener">code</a>{% endif %}
