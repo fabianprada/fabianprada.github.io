@@ -36,7 +36,14 @@ title: Fabian Prada
           <span class="paper-title">{{ p.title }}</span>
           {% endif %}
           <p class="paper-authors">
-            {% for a in p.authors %}{% if a contains "Prada" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            {% if p.authors.size > 20 %}
+              {% assign first_six = p.authors | slice: 0, 6 %}
+              {% assign last_six = p.authors | slice: -6, 6 %}
+              {% assign prada_name = p.authors | where_exp: "a", "a contains 'Prada'" | first %}
+              {{ first_six | join: ", " }}, ..., <strong>{{ prada_name }}</strong>, ..., {{ last_six | join: ", " }}
+            {% else %}
+              {% for a in p.authors %}{% if a contains "Prada" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            {% endif %}
           </p>
           <p class="paper-venue"><strong>{{ p.venue }}, {{ p.year }}</strong></p>
           <span class="paper-type">{{ p.type }}</span>
