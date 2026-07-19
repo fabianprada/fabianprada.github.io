@@ -30,28 +30,33 @@ title: Fabian Prada
       <ul class="paper-list">
         {% for p in pubs %}
         <li class="paper">
-          {% if p.link %}
-          <a href="{{ p.link }}" class="paper-title" target="_blank" rel="noopener">{{ p.title }}</a>
-          {% else %}
-          <span class="paper-title">{{ p.title }}</span>
+          {% if p.teaser %}
+          <img src="{{ '/assets/' | append: p.teaser | relative_url }}" alt="{{ p.title }} teaser" class="paper-teaser">
           {% endif %}
-          <p class="paper-authors">
-            {% if p.authors.size > 20 %}
-              {% assign first_six = p.authors | slice: 0, 6 %}
-              {% assign last_six = p.authors | slice: -6, 6 %}
-              {% assign prada_name = p.authors | where_exp: "a", "a contains 'Prada'" | first %}
-              {{ first_six | join: ", " }}, ..., <strong>{{ prada_name }}</strong>, ..., {{ last_six | join: ", " }}
+          <div class="paper-content">
+            {% if p.link %}
+            <a href="{{ p.link }}" class="paper-title" target="_blank" rel="noopener">{{ p.title }}</a>
             {% else %}
-              {% for a in p.authors %}{% if a contains "Prada" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            <span class="paper-title">{{ p.title }}</span>
             {% endif %}
-          </p>
-          <p class="paper-venue"><strong>{{ p.venue }}, {{ p.year }}</strong></p>
-          <span class="paper-type">{{ p.type }}</span>
-          {% if p["project page"] %}<a href="{{ p["project page"] }}" class="paper-extra" target="_blank" rel="noopener">project page</a>{% endif %}
-          {% if p.code %}<a href="{{ p.code }}" class="paper-extra" target="_blank" rel="noopener">code</a>{% endif %}
-          {% if p.video %}<a href="{{ p.video }}" class="paper-extra" target="_blank" rel="noopener">video</a>{% endif %}
-          {% if p.slides %}<a href="{{ p.slides }}" class="paper-extra" target="_blank" rel="noopener">slides</a>{% endif %}
-          {% if p.poster %}<a href="{{ p.poster }}" class="paper-extra" target="_blank" rel="noopener">poster</a>{% endif %}
+            <p class="paper-authors">
+              {% if p.authors.size > 20 %}
+                {% assign first_six = p.authors | slice: 0, 6 %}
+                {% assign last_six = p.authors | slice: -6, 6 %}
+                {% assign prada_name = p.authors | where_exp: "a", "a contains 'Prada'" | first %}
+                {{ first_six | join: ", " }}, ..., <strong>{{ prada_name }}</strong>, ..., {{ last_six | join: ", " }}
+              {% else %}
+                {% for a in p.authors %}{% if a contains "Prada" %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+              {% endif %}
+            </p>
+            <p class="paper-venue"><strong>{{ p.venue }}, {{ p.year }}</strong></p>
+            <span class="paper-type">{{ p.type }}</span>
+            {% if p["project page"] %}<a href="{{ p["project page"] }}" class="paper-extra" target="_blank" rel="noopener">project page</a>{% endif %}
+            {% if p.code %}<a href="{{ p.code }}" class="paper-extra" target="_blank" rel="noopener">code</a>{% endif %}
+            {% if p.video %}<a href="{{ p.video }}" class="paper-extra" target="_blank" rel="noopener">video</a>{% endif %}
+            {% if p.slides %}<a href="{{ p.slides }}" class="paper-extra" target="_blank" rel="noopener">slides</a>{% endif %}
+            {% if p.poster %}<a href="{{ p.poster }}" class="paper-extra" target="_blank" rel="noopener">poster</a>{% endif %}
+          </div>
         </li>
         {% endfor %}
       </ul>

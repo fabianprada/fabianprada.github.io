@@ -75,11 +75,27 @@
 }
 
 .paper {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
   background: $background-color;
   border: 1px solid $grey-color-light;
   border-radius: 8px;
   padding: 0.9rem 1.1rem;
   margin-bottom: 0.75rem;
+}
+
+.paper-teaser {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.paper-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .paper-title {
