@@ -42,6 +42,9 @@ title: Fabian Prada
           <span class="paper-type">{{ p.type }}</span>
           {% if p["project page"] %}<a href="{{ p["project page"] }}" class="paper-extra" target="_blank" rel="noopener">project page</a>{% endif %}
           {% if p.code %}<a href="{{ p.code }}" class="paper-extra" target="_blank" rel="noopener">code</a>{% endif %}
+          {% if p.video %}<a href="{{ p.video }}" class="paper-extra" target="_blank" rel="noopener">video</a>{% endif %}
+          {% if p.slides %}<a href="{{ p.slides }}" class="paper-extra" target="_blank" rel="noopener">slides</a>{% endif %}
+          {% if p.poster %}<a href="{{ p.poster }}" class="paper-extra" target="_blank" rel="noopener">poster</a>{% endif %}
         </li>
         {% endfor %}
       </ul>

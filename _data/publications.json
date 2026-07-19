@@ -21,7 +21,9 @@
     "year": 2016,
     "venue": "ACM SIGGRAPH (ACM Trans. Graph. 35, 4)",
     "affiliation": "Johns Hopkins University",
-    "link": "https://doi.org/10.1145/2897824.2925967"
+    "link": "https://doi.org/10.1145/2897824.2925967",
+    "video": "https://drive.google.com/file/d/1UzNiz1p26QKkTJzvKNumxjIzmOnUfYGu/view?usp=sharing",
+    "slides": "https://docs.google.com/presentation/d/1G2GG5h7YZgLeI4zujKO0xawCO6s-eA_t/edit?usp=sharing&ouid=115839934758878511532&rtpof=true&sd=true"
   },
   {
     "type": "article",
@@ -33,7 +35,9 @@
     "year": 2017,
     "venue": "ACM SIGGRAPH (ACM Trans. Graph. 36, 4)",
     "affiliation": "Johns Hopkins University",
-    "link": "https://doi.org/10.1145/3072959.3073679"
+    "link": "https://doi.org/10.1145/3072959.3073679",
+    "video": "https://drive.google.com/file/d/13tBGkDQiF6tXM8m7VTMOFsn8IfWSNCcM/view?usp=sharing",
+    "slides": "https://docs.google.com/presentation/d/1Bu_5NI5FkWRZwbfNDU4SBNsV8ZPW7bSq/edit?usp=sharing&ouid=115839934758878511532&rtpof=true&sd=true"
   },
   {
     "type": "article",
@@ -45,7 +49,9 @@
     "year": 2018,
     "venue": "ACM SIGGRAPH (ACM Trans. Graph. 37, 4)",
     "affiliation": "Johns Hopkins University",
-    "link": "https://doi.org/10.1145/3197517.3201317"
+    "link": "https://doi.org/10.1145/3197517.3201317",
+    "video": "https://drive.google.com/file/d/1zhL6C_scPNKwsDQjP6VR5S-SDYflgVJe/view?usp=sharing",
+    "slides": "https://docs.google.com/presentation/d/17UOn_aMULl4Qm5PueOzS7pQ_DpTFlQ7u/edit?usp=sharing&ouid=115839934758878511532&rtpof=true&sd=true"
   },
   {
     "type": "article",
@@ -273,7 +279,8 @@
     "year": 2011,
     "venue": "XVIII Congreso Colombiano de Matemáticas",
     "affiliation": "Universidad de los Andes",
-    "link": null
+    "link": "https://drive.google.com/file/d/1smxsUbRv3Yrr46mq6kJM-DDdCEaQJtbH/view?usp=sharing",
+    "poster": "https://drive.google.com/file/d/1LEp0UYWZVRK2cfLfI7lqZM2Q7qMs0B0w/view?usp=sharing"
   },
   {
     "type": "thesis",
@@ -285,7 +292,7 @@
     "year": 2010,
     "venue": "Undergraduate Thesis, Universidad de los Andes",
     "affiliation": "Universidad de los Andes",
-    "link": null
+    "link": "https://drive.google.com/file/d/1bQ4qDUJObrWMgo_iOlugNoLGW7rGRER0/view?usp=sharing"
   },
   {
     "type": "thesis",
@@ -297,7 +304,7 @@
     "year": 2013,
     "venue": "Master's Thesis, IMPA",
     "affiliation": "IMPA",
-    "link": null
+    "link": "https://drive.google.com/file/d/1MqgnLHQYjqsaS5fIAS90MkS_YAKZuMDn/view?usp=sharing"
   },
   {
     "type": "thesis",
@@ -309,6 +316,6 @@
     "year": 2018,
     "venue": "PhD Dissertation, Johns Hopkins University",
     "affiliation": "Johns Hopkins University",
-    "link": null
+    "link": "https://drive.google.com/file/d/13Hwyx-xlaFAcK3RbsosFbBieWlyrXdSJ/view?usp=sharing"
   }
 ]
