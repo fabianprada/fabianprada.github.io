@@ -192,7 +192,7 @@
     "project page": null,
     "code": null,
     "file": "2025-CVPR.pdf",
-    "teaser": null,
+    "teaser": "teasers/2025-CVPR.png",
     "title": "FRESA: Feedforward Reconstruction of Personalized Skinned Avatars from Few Images",
     "authors": ["Rong Wang", "Fabian Prada", "Ziyan Wang", "Zhongshi Jiang", "Chengxiang Yin", "Junxuan Li", "Shunsuke Saito", "Igor Santesteban", "Javier Romero", "Rohan Joshi", "Hongdong Li", "Jason Saragih", "Yaser Sheikh"],
     "year": 2025,
@@ -215,10 +215,10 @@
   },
   {
     "type": "article",
-    "project page": null,
+    "project page": "https://tkhkaeio.github.io/projects/25-scgen/",
     "code": null,
     "file": "2025-ICCV-B.pdf",
-    "teaser": null,
+    "teaser": "teasers/2025-ICCV-B.png",
     "title": "Generative Modeling of Shape-Dependent Self-Contact Human Poses",
     "authors": ["Takehiko Ohkawa", "Jihyun Lee", "Shunsuke Saito", "Jason Saragih", "Fabian Prada", "Yichen Xu", "Shoou-I Yu", "Ryosuke Furuta", "Yoichi Sato", "Takaaki Shiratori"],
     "year": 2025,
@@ -270,7 +270,7 @@
     "project page": null,
     "code": "https://github.com/facebookresearch/MHR",
     "file": "2025-Arxiv-A.pdf",
-    "teaser": null,
+    "teaser": "teasers/2025-Arxiv-A.png",
     "title": "MHR: Momentum Human Rig",
     "authors": ["Aaron Ferguson", "Ahmed A. A. Osman", "Berta Bescos", "Carsten Stoll", "Chris Twigg", "Christoph Lassner", "David Otte", "Eric Vignola", "Fabian Prada", "Federica Bogo", "Igor Santesteban", "Javier Romero", "Jenna Zarate", "Jeongseok Lee", "Jinhyung Park", "Jinlong Yang", "John Doublestein", "Kishore Venkateshan", "Kris Kitani", "Ladislav Kavan", "Marco Dal Farra", "Matthew Hu", "Matthew Cioffi", "Michael Fabris", "Michael Ranieri", "Mohammad Modarres", "Petr Kadlecek", "Rawal Khirodkar", "Rinat Abdrashitov", "Romain Prévost", "Roman Rajbhandari", "Ronald Mallet", "Russell Pearsall", "Sandy Kao", "Sanjeev Kumar", "Scott Parrish", "Shoou-I Yu", "Shunsuke Saito", "Takaaki Shiratori", "Te-Li Wang", "Tony Tung", "Yichen Xu", "Yuan Dong", "Yuhua Chen", "Yuanlu Xu", "Yuting Ye", "Zhongshi Jiang"],
     "year": 2025,
@@ -283,7 +283,7 @@
     "project page": "https://huggingface.co/datasets/facebook/seamless-interaction",
     "code": "https://github.com/facebookresearch/seamless_interaction",
     "file": "2025-Arxiv-B.pdf",
-    "teaser": null,
+    "teaser": "teasers/2025-Arxiv-B.png",
     "title": "Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset",
     "authors": ["Vasu Agrawal", "Akinniyi Akinyemi", "Kathryn Alvero", "Morteza Behrooz", "Julia Buffalini", "Fabio Maria Carlucci", "Joy Chen", "Junming Chen", "Zhang Chen", "Shiyang Cheng", "Praveen Chowdary", "Joe Chuang", "Antony D'Avirro", "Jon Daly", "Ning Dong", "Mark Duppenthaler", "Cynthia Gao", "Jeff Girard", "Martin Gleize", "Sahir Gomez", "Hongyu Gong", "Srivathsan Govindarajan", "Brandon Han", "Sen He", "Denise Hernandez", "Yordan Hristov", "Rongjie Huang", "Hirofumi Inaguma", "Somya Jain", "Raj Janardhan", "Qingyao Jia", "Christopher Klaiber", "Dejan Kovachev", "Moneish Kumar", "Hang Li", "Yilei Li", "Pavel Litvin", "Wei Liu", "Guangyao Ma", "Jing Ma", "Martin Ma", "Xutai Ma", "Lucas Mantovani", "Sagar Miglani", "Sreyas Mohan", "Louis-Philippe Morency", "Evonne Ng", "Kam-Woh Ng", "Tu Anh Nguyen", "Amia Oberai", "Benjamin Peloquin", "Juan Pino", "Jovan Popović", "Omid Poursaeed", "Fabian Prada", "Alice Rakotoarison", "Rakesh Ranjan", "Alexander Richard", "Christophe Ropers", "Safiyyah Saleem", "Vasu Sharma", "Alex Shcherbyna", "Jie Shen", "Anastasis Stathopoulos", "Anna Sun", "Paden Tomasello", "Tuan Tran", "Arina Turkatenko", "Bo Wan", "Chao Wang", "Jeff Wang", "Mary Williamson", "Carleigh Wood", "Tao Xiang", "Yilin Yang", "Zhiyuan Yao", "Chen Zhang", "Jiemin Zhang", "Xinyue Zhang", "Jason Zheng", "Pavlo Zhyzheria", "Jan Zikes", "Michael Zollhoefer"],
     "year": 2025,
@@ -343,5 +343,18 @@
     "venue": "PhD Dissertation, Johns Hopkins University",
     "affiliation": "Johns Hopkins University",
     "link": "https://drive.google.com/file/d/13Hwyx-xlaFAcK3RbsosFbBieWlyrXdSJ/view?usp=sharing"
+  },
+  {
+    "type": "technical report",
+    "project page": "https://www.meta.com/emerging-tech/codec-avatars/embody-3d",
+    "code": null,
+    "file": "2025-Arxiv-C.pdf",
+    "teaser": null,
+    "title": "Embody 3D: A Large-scale Multimodal Motion and Behavior Dataset",
+    "authors": ["Claire McLean", "Makenzie Meendering", "Tristan Swartz", "Orri Gabbay", "Alexandra Olsen", "Rachel Jacobs", "Nicholas Rosen", "Philippe de Bree", "Tony Garcia", "Gadsden Merrill", "Jake Sandakly", "Julia Buffalini", "Neham Jain", "Steven Krenn", "Moneish Kumar", "Dejan Markovic", "Evonne Ng", "Fabian Prada", "Andrew Saba", "Siwei Zhang", "Vasu Agrawal", "Tim Godisart", "Alexander Richard", "Michael Zollhoefer"],
+    "year": 2025,
+    "venue": "arXiv preprint (arXiv:2510.16258)",
+    "affiliation": "Meta",
+    "link": "https://arxiv.org/abs/2510.16258"
   }
 ]
